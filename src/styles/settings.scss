@@ -8,3 +8,134 @@
 // @use 'vuetify' with (
 //   $color-pack: false
 // );
+// global
+body {
+  font-family: "Merriweather";
+  line-height: 150%;
+  font-style: normal;
+  color: #343030;
+}
+main {
+  margin-top: 29px;
+}
+.v-footer {
+  padding: 0px;
+  min-height: 96px;
+}
+.bold {
+  font-weight: 700;
+}
+.regular {
+  font-weight: 400;
+}
+.light {
+  font-weight: 300;
+}
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #343030;
+}
+h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #343030;
+}
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #343030;
+}
+h4 {
+  font-size: 14px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 14px;
+  font-weight: 300;
+  color: #a0a0a0;
+}
+input:focus-visible {
+  outline: none;
+  border-radius: none;
+}
+.bg-d {
+  background: #e5e5e5;
+}
+.button-bg-d {
+  background: #403432;
+}
+.button-bg-hover {
+  background: #776763;
+}
+.button-bg-disable {
+  background: #c1b4b1;
+}
+
+// end global
+.bar-border {
+  border-bottom: 1px solid #e1e1e1;
+}
+.default-btn {
+  padding: 13px 36px 14px 36px;
+  font-size: 14px;
+  color: #ffffff;
+  height: unset !important;
+}
+.search-input {
+  padding: 13px 16px 14px 16px;
+  color: #9f9f9f;
+  font-size: 14px;
+  border-radius: 0;
+  border: 1px solid #e1e1e1;
+  border-right: none;
+}
+.search-input:focus {
+  border: 1px solid #b5b5b5;
+  color: #343030;
+}
+.page-title {
+  padding-left: 4px;
+}
+.buy-btn {
+  padding: 13px 30px !important;
+}
+.product-detail {
+  padding: 24px 24px;
+}
+.product-action {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product-sale {
+  text-decoration-line: line-through;
+}
+.product-container {
+  padding: 16px !important;
+}
+.bg-checked {
+  padding: 13px 9px 14px 9px !important;
+}
+.contact-me {
+  display: flex;
+  justify-content: end;
+}
+.mobile-menue {
+  display: flex;
+}
+.pc-menue {
+  display: none;
+}
+@media screen and (min-width: 1264px) {
+  .mobile-menue {
+    display: none;
+  }
+  .pc-menue {
+    display: flex;
+  }
+  .search-input {
+    min-width: 304px;
+  }
+}

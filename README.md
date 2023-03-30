@@ -1,4 +1,8 @@
 # base
+## Process of Building
+```
+This project has been developed with vue 2, vuetify, persister-vuex.
+```
 
 ## Project setup
 
