@@ -20,6 +20,7 @@ main {
 }
 .v-footer {
   padding: 0px;
+  min-height: 96px;
 }
 .bold {
   font-weight: 700;
@@ -87,7 +88,6 @@ input:focus-visible {
   padding: 13px 16px 14px 16px;
   color: #9f9f9f;
   font-size: 14px;
-  min-width: 304px;
   border-radius: 0;
   border: 1px solid #e1e1e1;
   border-right: none;
@@ -117,4 +117,25 @@ input:focus-visible {
 }
 .bg-checked {
   padding: 13px 9px 14px 9px !important;
+}
+.contact-me {
+  display: flex;
+  justify-content: end;
+}
+.mobile-menue {
+  display: flex;
+}
+.pc-menue {
+  display: none;
+}
+@media screen and (min-width: 1264px) {
+  .mobile-menue {
+    display: none;
+  }
+  .pc-menue {
+    display: flex;
+  }
+  .search-input {
+    min-width: 304px;
+  }
 }

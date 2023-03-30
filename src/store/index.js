@@ -1,15 +1,12 @@
-import Vue from "vue";
-import Vuex from "vuex";
-import VuexPersistence from "vuex-persist";
+import { createStore } from "vuex";
+import createPersistedState from "vuex-persistedstate";
 import home from "./home";
 
-Vue.use(Vuex);
-
-const store = new Vuex({
-  plugins: [new VuexPersistence().plugin],
+const store = createStore({
   modules: {
     home: home,
   },
+  plugins: [createPersistedState()],
 });
-// console.log(store)
+
 export default store;

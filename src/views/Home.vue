@@ -10,10 +10,12 @@
         v-for="(value, index) in products"
         :key="index"
         class="product-container"
-        cols="3"
-        xs="12"
+        cols="12"
+        md="4"
+        lg="3"
+        sm="6"
       >
-        <ProductCard :info="{ ...value }" />
+        <ProductCard :index="index" :info="{ ...value }" />
       </v-col>
     </v-row>
   </v-container>
@@ -21,7 +23,7 @@
 
 <script>
 import ProductCard from "@/components/ProductCard.vue";
-import { mapGetters } from "vuex";
+import { mapGetters, mapActions } from "vuex";
 
 export default {
   components: {
@@ -29,48 +31,22 @@ export default {
   },
   data() {
     return {
-      products: [
-        {
-          title: "«Рождение Венеры»",
-          position: "Сандро Боттичелли",
-          price: "1 000 000 $",
-          state: "1",
-          sale: "2 000 000 $",
-          img: "@/assets/img/1.jpg",
-        },
-        {
-          title: "«Тайная вечеря» Леонардо",
-          position: "да Винчи",
-          price: "3 000 000 $",
-          state: "1",
-          sale: "",
-          img: "@/assets/img/1.jpg",
-        },
-        {
-          title: "«Сотворение Адама»",
-          position: "Микеланджело",
-          price: "6 000 000 $",
-          state: "2",
-          sale: "6 000 000 $",
-          img: "@/assets/img/1.jpg",
-        },
-        {
-          title: "«Урок анатомии»",
-          position: "Рембрандт",
-          price: "1 000 000 $",
-          state: "3",
-          sale: "2 000 000 $",
-          bio: "Продана на аукционе",
-          img: "@/assets/img/1.jpg",
-        },
-      ],
+      products: [],
     };
   },
   computed: {
-    ...mapGetters(["test"]),
+    ...mapGetters(["GETPRODUCTS", "FILTEREDPRODUCTS"]),
   },
-  mounted() {
-    // console.log(this.$store);
+  methods: {
+    ...mapActions(["filterAction"]),
+  },
+  created() {
+    this.products = this.FILTEREDPRODUCTS;
+  },
+  watch: {
+    FILTEREDPRODUCTS() {
+      this.products = this.FILTEREDPRODUCTS;
+    },
   },
 };
 </script>
