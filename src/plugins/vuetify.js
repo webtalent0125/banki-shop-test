@@ -22,6 +22,7 @@ export default createVuetify({
           primary: "#1867C0",
           secondary: "#5CBBF6",
           footer: "#ECEAEA",
+          checked: "#5b3a32"
         },
       },
     },

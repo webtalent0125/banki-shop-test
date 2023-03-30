@@ -10,14 +10,16 @@
           <v-btn variant="text" class="h-auto">Контакты</v-btn>
           <v-btn variant="text" class="h-auto">О компании</v-btn>
           <v-spacer></v-spacer>
-          <!-- <v-btn icon="mdi-magnify"></v-btn> -->
-          <div class="d-flex">
+          <div class="d-flex padding-0">
             <input
               class="search-input rounded-0"
               type="text"
               placeholder="Поиск по названию картины"
+              v-model="searchKey"
             />
-            <v-btn class="default-btn button-bg-d rounded-0">Найти</v-btn>
+            <v-btn @click="filter" class="default-btn button-bg-d rounded-0"
+              >Найти</v-btn
+            >
           </div>
         </v-col>
       </v-row>
@@ -25,6 +27,22 @@
   </v-app-bar>
 </template>
 
-<script setup>
-//
+<script>
+export default {
+  data() {
+    return {
+      searchKey: "",
+    };
+  },
+  methods: {
+    filter: function () {
+      console.log(this.searchKey);
+    },
+  },
+  watch: {
+    searchKey(newQuestion) {
+      console.log(newQuestion);
+    },
+  },
+};
 </script>

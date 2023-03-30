@@ -11,5 +11,5 @@ const store = new Vuex({
     home: home,
   },
 });
-
+// console.log(store)
 export default store;

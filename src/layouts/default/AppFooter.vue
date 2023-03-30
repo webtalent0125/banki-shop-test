@@ -4,12 +4,12 @@
       <v-row>
         <v-col class="d-flex">
           <v-spacer></v-spacer>
-          <v-btn variant="text">Каталог</v-btn>
+          <v-btn class="color-primary on-btn" variant="text">Каталог</v-btn>
           <v-btn variant="text">Доставка</v-btn>
           <v-btn variant="text">Оплата</v-btn>
           <v-btn variant="text">Контакты</v-btn>
           <v-btn variant="text">О компании</v-btn>
-          <v-spacer></v-spacer>
+           <v-spacer></v-spacer>
           <!-- <v-btn icon="mdi-magnify"></v-btn> -->
           <v-btn prepend-icon="mdi-phone" variant="text"
             >+7 (812) 555-55-55</v-btn
