@@ -8,3 +8,88 @@
 // @use 'vuetify' with (
 //   $color-pack: false
 // );
+// global
+body {
+  font-family: "Merriweather";
+  line-height: 150%;
+  font-style: normal;
+  color: #343030;
+  background-color: #f6f3f3;
+}
+main {
+  margin-top: 29px;
+}
+.v-footer {
+  padding: 0px;
+}
+.bold {
+  font-weight: 700;
+}
+.regular {
+  font-weight: 400;
+}
+.light {
+  font-weight: 300;
+}
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #343030;
+}
+h2 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 16px;
+}
+h4 {
+  font-size: 14px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 14px;
+}
+input:focus-visible {
+  outline: none;
+  border-radius: none;
+}
+.bg-d {
+  background: #e5e5e5;
+}
+.button-bg-d {
+  background: #403432;
+}
+.button-bg-hover {
+  background: #776763;
+}
+.button-bg-disable {
+  background: #c1b4b1;
+}
+.button-bg-active {
+  background: #5b3a32;
+}
+// end global
+.bar-border {
+  border-bottom: 1px solid #E1E1E1;
+}
+.default-btn {
+  padding: 13px 36px 14px 36px;
+  font-size: 14px;
+  color: #ffffff;
+  height: unset!important;
+}
+.search-input {
+  padding: 13px 16px 14px 16px;
+  color: #9f9f9f;
+  font-size: 14px;
+  min-width: 304px;
+  border-radius: 0;
+  border: 1px solid #E1E1E1;
+  border-right: none;
+}
+.search-input:focus {
+  border: 1px solid #B5B5B5;
+  color: #343030;
+}
